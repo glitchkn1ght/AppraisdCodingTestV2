@@ -83,7 +83,8 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="AppraisalControllerTests.cs" />
+    <Compile Include="PermissionsServiceTests\PermissionsServiceTests.cs" />
+    <Compile Include="ControllerTests\AppraisalControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

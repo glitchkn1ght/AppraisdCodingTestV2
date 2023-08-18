@@ -20,3 +20,15 @@ The new behaviour should be as follows
 |  true        |  false            |          false                           |    true             |
 |  false       |  false            |          false                           |    false            |
 
+
+Jams Notes
+added readonly property to class properties
+put changes on master which i wouldn't normally do
+skinny controllers fat services
+constructor null checks and appropriate tests.
+logs.
+validate appraisal content
+
+Problems
+shouldn't be checking the dependancies, e.g. if appraisal has been added to the database as that's not what a unit test is for
+shouldn't be initalizing actual instances of dependencies, use mocks. 
