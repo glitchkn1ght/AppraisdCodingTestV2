@@ -30,10 +30,11 @@ namespace Business
                 if (this._permissionsService.UserHasAddAppraisalPermissions(currentUser))
                 {
                     _database.AddNewAppraisal(newApparisal);
+                    
                     return new JsonResultDummy(true, "Appraisal successfully added.");
                 }
 
-                return new JsonResultDummy(false, "Appraisal was not added as currenty user does not have appropriate admin permissions. Please check account and database settings.");
+                return new JsonResultDummy(false, "Appraisal was not added as current user does not have appropriate admin permissions. Please check account and database settings.");
             }
 
             catch(Exception ex) 

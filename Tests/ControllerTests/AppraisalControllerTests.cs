@@ -66,7 +66,7 @@ namespace Tests
 
             //assert
             Assert.False(result.IsSuccess);
-            Assert.Equal("Appraisal was not added as currenty user does not have appropriate admin permissions. Please check account and database settings.", result.Message);
+            Assert.Equal("Appraisal was not added as current user does not have appropriate admin permissions. Please check account and database settings.", result.Message);
         }
 
         [Fact]

@@ -1,10 +1,6 @@
-﻿using Business;
-using Business.Data;
-using Business.Model;
+﻿using Business.Model;
 using Business.Services;
 using Moq;
-using System;
-using System.Linq;
 using Xunit;
 
 namespace Tests
@@ -13,7 +9,6 @@ namespace Tests
     {
         private Mock<ISettingsService> settingsServiceMock;
         private PermissionsService permissionService;
-        
         
         public PermissionServiceTests()
         {
