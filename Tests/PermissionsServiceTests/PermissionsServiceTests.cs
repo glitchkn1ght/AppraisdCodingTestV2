@@ -18,7 +18,7 @@ namespace Tests
         [Theory]
         [InlineData(true, true)]
         [InlineData(false, true)]
-        public void When_Super_Admin_Setting_Enabled_And_User_IsSuperAdmin_Permission_Then_HasPermission_Returns_True(bool userIsAdmin, bool userIsSuperAdmin)
+        public void When_Super_Admin_Setting_Enabled_And_User_IsSuperAdmin_Then_HasPermission_Returns_True(bool userIsAdmin, bool userIsSuperAdmin)
         {
             //arrange
             var settings = new Settings

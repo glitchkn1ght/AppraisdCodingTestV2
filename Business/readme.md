@@ -48,6 +48,9 @@ In the first of the controller test your calling verify against the add method o
 value of the JsonResultDummy as well. The second of the controller tests does assert on the JsonResultDummy result but doesn't verify the database mock. 
 Really you should be testing the behaviour of a unit in a consistent manner. 
 
+It's not very relevant to this scenario but you need to be mindful with using dynamic variables in tests e.g.  DateTime.UtcNow.AddDays(24), as they may give different behaviour in 
+the future depending on how you've written your tests.
+
 ## Approach to the new design/tests
 Im aware i could have combined some of my tests together by using more parameters but i didn't in order to keep them easy to understand going forward.
 As you keep adding parameters it soon gets to the stage you're struggling to understand what scenario each one represents. It also makes it harder to keep the name
