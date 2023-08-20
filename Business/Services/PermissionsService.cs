@@ -26,8 +26,11 @@ namespace Business.Services
                 }
 
                 return false;
+
+                //this could probably just be 'return currentUser.IsSuperAdmin'
+                // but it's cyclomatic complexity is already pretty low and i think this way is a bit more readable.
             }
-            
+
             if (currentUser.IsAdmin)
             {
                 return true;
